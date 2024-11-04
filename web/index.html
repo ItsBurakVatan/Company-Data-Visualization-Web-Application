@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script>
+        window.scrollTo(0, 0); // Sayfanın en üstüne kaydır      
+    </script>
+    
+</head>
+<body>
+    <div id="home" class="container">
+        <header>
+            <h1>BISTEK SOFTWARE REPORT PAGE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#monthly">Monthly Number of Bicycles Chart</a></li>
+                <li><a href="#seasonal">Seasonal Bike Count Chart</a></li>
+                <li><a href="#daily">Daily Number of Bikes Graph</a></li>
+                <li><a href="#weekly">Weekly Bike Count Chart</a></li>
+                <li><a href="#annual">Annual Number of Bicycles Chart</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div style="width: 80%; margin: 20px auto 0 auto;">
+            <input type="file" id="csvFile" accept=".csv"> 
+            <div id="charts-container">
+                <div id="monthly" class="chart-container1">
+                    <h2>Monthly Number of Bicycles Chart</h2>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div id="seasonal" class="chart-container2">
+                    <h2>Seasonal Bike Count Chart</h2>
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                <div id="daily" class="chart-container3">
+                    <h2>Daily Number of Bikes Graph</h2>
+                    <canvas id="myLineChart"></canvas>
+                </div>
+                <div id="weekly" class="chart-container4">
+                    <h2>Weekly Bike Count Chart</h2>
+                    <canvas id="myColumnChart2"></canvas>
+                </div>
+                <div id="annual" class="chart-container5">
+                    <h2>Annual Number of Bicycles Chart</h2>
+                    <canvas id="myBarChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
+
+

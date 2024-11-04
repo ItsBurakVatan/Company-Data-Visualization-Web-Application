@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.csvFile{
+    margin-top: 100px;
+}
+
+header{
+    color: #ccc;
+}
+
+.container{
+    background: url(backgroundimg.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}  
+
+h1 {
+    margin-top: 20px; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+    color: black;
+}
+
+.chart canvas {
+    max-width: 100%; 
+    max-height: 400px; 
+}
+
+.chart canvas {   
+    width: 100%;
+    max-height: 100px;
+}
+
+.charts-container:nth-child(odd) {
+    margin-bottom: 150px; /* Tek sıradaki grafiği altına boşluk ekler */
+}
+
+#csvFile{
+    margin-top: 70px;
+}
+
+.chart-container1{
+    text-align: center;
+    max-height: 400px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 550px; /* İkinci grafik başlığı ile birinci grafik arasındaki boşluğu ayarlar */
+    margin-bottom: 50px; /* İlk grafik başlığı ile grafiği ayarlar */
+}
+.chart-container2{
+    text-align: center;
+    max-height: 400px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 530px;
+    margin-bottom: 50px; 
+}
+.chart-container3{
+    text-align: center;
+    max-height: 400px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 530px; /* İkinci grafik başlığı ile birinci grafik arasındaki boşluğu ayarlar */
+    margin-bottom: 50px; /* İlk grafik başlığı ile grafiği ayarlar */
+}
+.chart-container4{
+    text-align: center;
+    max-height: 400px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 530px; /* İkinci grafik başlığı ile birinci grafik arasındaki boşluğu ayarlar */
+    margin-bottom: 50px; /* İlk grafik başlığı ile grafiği ayarlar */
+}
+.chart-container5{
+    text-align: center;
+    max-height: 400px;
+    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 530px; /* İkinci grafik başlığı ile birinci grafik arasındaki boşluğu ayarlar */
+    margin-bottom: 50px; /* İlk grafik başlığı ile grafiği ayarlar */
+}
+
+
+nav ul{
+    list-style-type: none;
+    position: absolute;
+    top: 10px; /* Yüksekliği ayarlayabilirsiniz */
+    right: 10px; /* Sağa olan mesafeyi ayarlayabilirsiniz */
+    background-color: white; /* Opsiyonel: Menünün arka plan rengi */
+    padding: 10px; /* Opsiyonel: Menünün iç kenar boşluğu */
+    border: 1px solid #ccc; /* Opsiyonel: Menüye kenarlık ekler */
+    border-radius: 5px; /* Opsiyonel: Kenarlık köşelerini yuvarlar */
+}
+
+nav ul li{
+    padding: 10px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+nav ul li:last-child{
+    border: none;
+}
+
+nav ul li:hover{
+    background-color: red;
+    padding: 20px 30px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
